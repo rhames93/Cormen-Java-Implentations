@@ -198,15 +198,11 @@ public class PriorityQueue<T> extends AbstractQueue<T>
 		return arr;
 	}
 	
-	@Override
-	public T[] toArray(T arr[]) {
-		if(arr == null) {
-			throw new NullPointerException();
-		}
-		return arr;
-	}
-	
 	public Comparator<? super T> comparator() {
 		return this.comparator;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("hello");
 	}
 }
